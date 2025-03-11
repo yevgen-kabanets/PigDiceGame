@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.Core", "PigDiceGame.Core\PigDiceGame.Core.csproj", "{83F0EF85-1A23-4BD0-9DB1-CC0DCBDDB486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.Core.Tests", "PigDiceGame.Core.Tests\PigDiceGame.Core.Tests.csproj", "{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83F0EF85-1A23-4BD0-9DB1-CC0DCBDDB486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F0EF85-1A23-4BD0-9DB1-CC0DCBDDB486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F0EF85-1A23-4BD0-9DB1-CC0DCBDDB486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F0EF85-1A23-4BD0-9DB1-CC0DCBDDB486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94D23098-C7E1-4618-8A6F-4DEF892864F9}
+	EndGlobalSection
+EndGlobal
