@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.Core", "PigDiceGame.Core\PigDiceGame.Core.csproj", "{83F0EF85-1A23-4BD0-9DB1-CC0DCBDDB486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.Core.Tests", "PigDiceGame.Core.Tests\PigDiceGame.Core.Tests.csproj", "{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.ConsoleClient", "PigDiceGame.ConsoleClient\PigDiceGame.ConsoleClient.csproj", "{20D6ACCE-100E-4A35-8FE7-38435CB473D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBA40FB4-799B-43CF-89AD-4DF3DBBA96CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
