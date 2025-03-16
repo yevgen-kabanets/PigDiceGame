@@ -28,6 +28,10 @@ namespace PigDiceGame.Core
             }
 
             State = GameState.Started;
+            foreach (var player in _playersScores.Keys)
+            {
+                _playersScores[player] = 0;
+            }
             TurnTotal = 0;
             CurrentPlayer = _playersScores.GetAt(0).Key;
         }

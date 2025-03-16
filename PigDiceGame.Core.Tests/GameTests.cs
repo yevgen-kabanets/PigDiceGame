@@ -52,6 +52,29 @@ namespace PigDiceGame.Core.Tests
         }
 
         [Test]
+        public void NewGame_AfterGameEnded_ResetsPlayerScores()
+        {
+            // Arrange
+            _player1.GetNextMove().Returns(Move.Roll);
+            _dice.Roll().Returns(5);
+
+            // Act
+            for (int i = 0; i < 20; i++)
+            {
+                _sut.MakeMove();
+            }
+            _sut.NewGame();
+
+            // Assert
+            Assert.That(_sut.State, Is.EqualTo(GameState.Started));
+            Assert.That(_sut.PlayersScores.Count, Is.EqualTo(2));
+            Assert.That(_sut.PlayersScores[_player1], Is.EqualTo(0));
+            Assert.That(_sut.PlayersScores[_player2], Is.EqualTo(0));
+            Assert.That(_sut.CurrentPlayer, Is.EqualTo(_player1));
+            Assert.That(_sut.TurnTotal, Is.EqualTo(0));
+        }
+
+        [Test]
         public void NewGame_LessThanTwoPlayers_ThrowsException()
         {
             // Act
