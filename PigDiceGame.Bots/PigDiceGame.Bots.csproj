@@ -1,14 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PigDiceGame.Bots\PigDiceGame.Bots.csproj" />
     <ProjectReference Include="..\PigDiceGame.Core\PigDiceGame.Core.csproj" />
   </ItemGroup>
 

@@ -1,7 +1,9 @@
-﻿using PigDiceGame.ConsoleClient;
+﻿using PigDiceGame.Bots;
+using PigDiceGame.ConsoleClient;
 using PigDiceGame.Core;
 using PigDiceGame.Core.Enums;
 using PigDiceGame.Core.Interfaces;
+using System.Numerics;
 
 var game = new Game(new ConsoleDice());
 Dictionary<IPlayer, string> players;
@@ -13,7 +15,7 @@ void ResetGame()
     players = [];
     while (true)
     {
-        Console.WriteLine("1 - Add player. 2 - Start game. 3 - Reset.");
+        Console.WriteLine("1 - Add player. 2 - Add bot. 3 - Start game. 4 - Reset.");
         var choice = Console.ReadKey();
         Console.WriteLine();
         try
@@ -24,9 +26,12 @@ void ResetGame()
                     AddPlayer();
                     break;
                 case '2':
+                    AddBot();
+                    break;
+                case '3':
                     StartGame();
                     return;
-                case '3':
+                case '4':
                     ResetGame();
                     break;
             }
@@ -91,4 +96,29 @@ void AddPlayer()
     var player = new ConsolePlayer();
     players[player] = name;
     game.AddPlayer(player);
+}
+
+void AddBot()
+{
+    while (true)
+    {
+        Console.WriteLine($"1 - {nameof(HoldAt20)}. 2 - {nameof(HoldAt25)}. 3 - {nameof(FourScoringTurns)}. 4 - {nameof(EndRaceOrKeepPace)}.");
+        var choice = Console.ReadKey();
+        Console.WriteLine();
+        IPlayer? player = choice.KeyChar switch
+        {
+            '1' => new HoldAt20(game),
+            '2' => new HoldAt25(game),
+            '3' => new FourScoringTurns(game),
+            '4' => new EndRaceOrKeepPace(game),
+            _ => null
+        };
+
+        if (player != null)
+        {
+            players[player] = player.GetType().Name;
+            game.AddPlayer(player);
+            return;
+        }
+    }
 }

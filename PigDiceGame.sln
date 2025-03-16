@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.Core.Tests", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.ConsoleClient", "PigDiceGame.ConsoleClient\PigDiceGame.ConsoleClient.csproj", "{20D6ACCE-100E-4A35-8FE7-38435CB473D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigDiceGame.Bots", "PigDiceGame.Bots\PigDiceGame.Bots.csproj", "{C063EBC9-8960-49A7-A478-F02D0C92EBE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20D6ACCE-100E-4A35-8FE7-38435CB473D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C063EBC9-8960-49A7-A478-F02D0C92EBE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C063EBC9-8960-49A7-A478-F02D0C92EBE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C063EBC9-8960-49A7-A478-F02D0C92EBE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C063EBC9-8960-49A7-A478-F02D0C92EBE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
